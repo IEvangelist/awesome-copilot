@@ -7,7 +7,7 @@ import { InstallCommandBar } from "../InstallCommandBar";
 import { LearningArticleLayout, type TocSection } from "../LearningArticleLayout";
 import { VideoCarousel, type Video } from "../VideoCarousel";
 
-const cliIntroVideo = "/media/cli-for-beginners-intro.mp4";
+const cliIntroVideo = `${import.meta.env.BASE_URL}media/cli-for-beginners-intro.mp4`;
 
 const articleSections: TocSection[] = [
   { id: "what-youll-learn", label: "What you’ll learn" },

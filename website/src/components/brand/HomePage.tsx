@@ -262,7 +262,7 @@ export function HomePage({
         <Section paddingBlockStart="normal" paddingBlockEnd="none">
           <Stack justifyContent="center" padding="none">
             <Image
-              src="/media/brand-divider-copilot-sitting.webp"
+              src={`${import.meta.env.BASE_URL}media/brand-divider-copilot-sitting.webp`}
               alt=""
               width={1230}
               height={157}

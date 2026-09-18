@@ -856,7 +856,7 @@ function LearningHubIndexBody({
         <Section paddingBlockStart="condensed" paddingBlockEnd="none">
           <Stack justifyContent="center" padding="none">
             <Image
-              src="/media/brand-divider-copilot-jumping.webp"
+              src={`${import.meta.env.BASE_URL}media/brand-divider-copilot-jumping.webp`}
               alt=""
               width={1738}
               height={196}

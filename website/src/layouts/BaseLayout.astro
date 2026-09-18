@@ -54,7 +54,7 @@ const canonicalUrl = new URL(
   canonicalPath ?? Astro.url.pathname,
   Astro.site,
 ).toString();
-const socialImageUrl = new URL(socialImage, Astro.site).toString();
+const socialImageUrl = new URL(socialImage.replace(/^\//, ""), new URL(basePath, Astro.site)).toString();
 const twitterDomain = Astro.site ? new URL(Astro.site).hostname : undefined;
 
 const contentSecurityPolicy = [

@@ -30,7 +30,7 @@ const articles: LearningHubArticle[] = docs
     id: entry.id,
     title: entry.data.title,
     description: entry.data.description ?? "",
-    href: `/${normalizeLearningHubPath(entry.id)}/`,
+    href: `${import.meta.env.BASE_URL}${normalizeLearningHubPath(entry.id)}/`,
     tags: entry.data.tags ?? [],
     lastUpdated:
       entry.data.lastUpdated instanceof Date

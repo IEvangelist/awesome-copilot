@@ -6,7 +6,7 @@ on:
       source_ref:
         description: Branch or commit to preview
         required: true
-        default: ievangelist-primer-site-refinements
+        default: design-review-pages
         type: string
 
 permissions:
